@@ -5,7 +5,6 @@ import { intros, contacts, trial } from '../content/site.js'
 export default function ContactPage() {
   const methods = [
     { title: 'Telegram', ...contacts.telegram },
-    { title: 'WhatsApp', ...contacts.whatsapp },
     { title: 'Телефон', ...contacts.phone },
     { title: 'E-mail', ...contacts.email },
   ]

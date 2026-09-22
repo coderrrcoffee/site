@@ -32,13 +32,6 @@ export default function Footer() {
           >
             {contacts.telegram.label}
           </a>
-          <a
-            href={contacts.whatsapp.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {contacts.whatsapp.label}
-          </a>
           <a href={contacts.phone.href}>{contacts.phone.label}</a>
           <a href={contacts.email.href}>{contacts.email.label}</a>
         </div>

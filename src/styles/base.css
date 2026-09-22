@@ -201,8 +201,8 @@ a:hover {
   top: 0.55em;
   width: 0.75rem;
   height: 0.4rem;
-  border-left: 2px solid var(--accent);
-  border-bottom: 2px solid var(--accent);
+  border-left: 2px solid var(--warm);
+  border-bottom: 2px solid var(--warm);
   transform: rotate(-45deg);
 }
 

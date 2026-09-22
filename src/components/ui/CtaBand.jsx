@@ -22,14 +22,6 @@ export default function CtaBand({
           >
             Написать в Telegram
           </Button>
-          <Button
-            href={contacts.whatsapp.href}
-            variant="secondary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            WhatsApp
-          </Button>
           <Button href={contacts.phone.href} variant="secondary">
             {contacts.phone.label}
           </Button>

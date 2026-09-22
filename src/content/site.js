@@ -15,7 +15,6 @@ export const tutor = {
 // ---- Контакты (используются в шапке, подвале и на странице «Контакты») ----
 export const contacts = {
   telegram: { label: 'Telegram', href: 'https://t.me/[username]' },
-  whatsapp: { label: 'WhatsApp', href: 'https://wa.me/7[телефон]' },
   phone: { label: '[+7 (___) ___-__-__]', href: 'tel:+7[телефон]' },
   email: { label: '[email@example.com]', href: 'mailto:[email@example.com]' },
   hours: 'Отвечаю в течение дня, обычно – в течение пары часов.',
