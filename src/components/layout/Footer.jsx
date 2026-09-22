@@ -53,17 +53,22 @@ export default function Footer() {
           href="https://t.me/codercoffee"
           target="_blank"
           rel="noopener noreferrer"
+          title="Сайт создал kitten · @codercoffee"
         >
           <img
             className="credit__avatar"
             src={avatar}
             alt=""
-            width="28"
-            height="28"
+            width="32"
+            height="32"
             loading="lazy"
           />
-          <span className="credit__name">kitten</span>
-          <span className="credit__handle">@codercoffee</span>
+          <span className="credit__text">
+            <span className="credit__label">Сайт создал</span>
+            <span className="credit__name">
+              kitten <span className="credit__handle">@codercoffee</span>
+            </span>
+          </span>
         </a>
       </div>
     </footer>

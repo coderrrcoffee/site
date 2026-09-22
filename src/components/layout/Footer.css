@@ -63,25 +63,48 @@
 .credit {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: var(--fs-small);
-  color: var(--muted);
+  gap: 0.6rem;
+  padding: 0.35rem 0.85rem 0.35rem 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .credit:hover {
-  color: var(--ink);
+  border-color: var(--accent);
+  background: var(--accent-soft);
   text-decoration: none;
 }
 
 .credit__avatar {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border);
 }
 
+.credit__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.credit__label {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
 .credit__name {
+  font-size: var(--fs-small);
   color: var(--ink);
   font-weight: 500;
+}
+
+.credit__handle {
+  color: var(--muted);
+  font-weight: 400;
 }
