@@ -160,19 +160,52 @@
 /* ---------- Мобильное меню ---------- */
 
 .mobile-menu {
-  display: none;
-  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  overflow: hidden;
   max-height: calc(100svh - 72px);
-  overflow-y: auto;
+  transition:
+    grid-template-rows 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .mobile-menu.is-open {
-  display: block;
+  grid-template-rows: 1fr;
+  visibility: visible;
+}
+
+.mobile-menu__inner {
+  min-height: 0;
+  overflow-y: auto;
+  border-top: 1px solid var(--border);
+}
+
+/* Лёгкое проявление содержимого вслед за раскрытием */
+.mobile-menu__inner > * {
+  opacity: 0;
+  transform: translateY(-4px);
+  transition:
+    opacity 0.25s ease 0.06s,
+    transform 0.25s ease 0.06s;
+}
+
+.mobile-menu.is-open .mobile-menu__inner > * {
+  opacity: 1;
+  transform: none;
 }
 
 @media (min-width: 1120px) {
-  .mobile-menu {
+  .mobile-menu,
+  .mobile-menu.is-open {
     display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu,
+  .mobile-menu__inner > * {
+    transition: none;
   }
 }
 
