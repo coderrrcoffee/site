@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { nav, tutor, contacts } from '../../content/site.js'
+import avatar from '../../assets/avatar.jpg'
 import './Footer.css'
 
 export default function Footer() {
@@ -47,6 +48,23 @@ export default function Footer() {
         <p>
           © {new Date().getFullYear()} {tutor.name}
         </p>
+        <a
+          className="credit"
+          href="https://t.me/codercoffee"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="credit__avatar"
+            src={avatar}
+            alt=""
+            width="28"
+            height="28"
+            loading="lazy"
+          />
+          <span className="credit__name">kitten</span>
+          <span className="credit__handle">@codercoffee</span>
+        </a>
       </div>
     </footer>
   )
