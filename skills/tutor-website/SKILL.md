@@ -50,7 +50,7 @@ Prefer specific positioning.
 
 Example:
 
-"English lessons for teenagers who want to speak confidently — without boring textbooks."
+"English lessons for teenagers who want to speak confidently – without boring textbooks."
 
 ## Trust
 

@@ -7,7 +7,7 @@ import Button from './Button.jsx'
  */
 export default function CtaBand({
   title = 'Запишитесь на пробное занятие',
-  text = 'Напишите в удобный мессенджер — договоримся о времени и обсудим цель занятий.',
+  text = 'Напишите в удобный мессенджер – договоримся о времени и обсудим цель занятий.',
 }) {
   return (
     <section className="cta-band">
