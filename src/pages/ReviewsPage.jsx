@@ -33,7 +33,7 @@ export default function ReviewsPage() {
           <Reveal>
             <SectionHeading
               title="Как менялся уровень учеников"
-              intro="Замените описания на реальные истории учеников."
+              intro="Замените описания на реальные истории учеников"
             />
           </Reveal>
           <Reveal as="div" className="card-grid card-grid--three">

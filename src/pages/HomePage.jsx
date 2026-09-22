@@ -81,7 +81,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Направления"
               title="С чем помогаю"
-              intro="Полный список направлений – на странице «Занятия»."
+              intro="Полный список направлений – на странице «Занятия»"
             />
           </Reveal>
           <Reveal as="div" className="card-grid">

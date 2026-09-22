@@ -38,7 +38,7 @@ export default function LessonsPage() {
           <Reveal>
             <SectionHeading
               title="Форматы занятий"
-              intro="Формат можно поменять в любой момент – например, начать индивидуально и перейти в мини-группу."
+              intro="Формат можно поменять в любой момент – например, начать индивидуально и перейти в мини-группу"
             />
           </Reveal>
           <Reveal as="div" className="card-grid card-grid--three">
