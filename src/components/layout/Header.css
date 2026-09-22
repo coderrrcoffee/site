@@ -29,11 +29,13 @@
   font-family: var(--font-heading);
   font-size: 1.0625rem;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .site-header__role {
   font-size: 0.75rem;
   color: var(--muted);
+  white-space: nowrap;
 }
 
 .site-header__nav {
@@ -48,6 +50,9 @@
 
 .site-header__actions .btn {
   display: none;
+  min-height: 40px;
+  padding: 0.3rem 0.95rem;
+  font-size: 0.875rem;
 }
 
 @media (min-width: 720px) {
@@ -108,7 +113,7 @@
   transform: rotate(-45deg);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1120px) {
   .site-header__nav {
     display: block;
   }
@@ -127,7 +132,7 @@
 
 .nav__list {
   display: flex;
-  gap: 1.25rem;
+  gap: 1rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -135,8 +140,9 @@
 
 .nav__link {
   color: var(--ink-soft);
-  font-size: 0.9375rem;
+  font-size: 0.9rem;
   line-height: 1.4;
+  white-space: nowrap;
   padding-block: 0.35rem;
   border-bottom: 2px solid transparent;
 }
@@ -164,7 +170,7 @@
   display: block;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1120px) {
   .mobile-menu {
     display: none;
   }
